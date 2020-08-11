@@ -29,25 +29,25 @@ subtitle = ""
 [[feature]]
   icon = "flask"
   icon_pack = "fas"
-  name = "Biohemistry"
+  name = "Biochemistry"
   description = ""
 
 [[feature]]
   icon = "laptop-code"
   icon_pack = "fas"
   name = "Bioinformatics"
-  description = "100%"  
+  description = ""  
 
 [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
   name = "Biostatistics"
-  description = "100%"  
+  description = ""  
 
 [[feature]]
   icon = "r-project"
   icon_pack = "fab"
-  name = "R"
+  name = "Data Science"
   description = ""
   
   

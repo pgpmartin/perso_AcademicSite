@@ -83,8 +83,8 @@ date_format = "Jan 2006"
   company = "INRAE ToxAlim - TIM"
   company_url = "https://www6.toulouse.inrae.fr/toxalim/Equipes-Recherche-Publications/TIM-Toxicologie-Integrative-Metabolisme"
   location = "Toulouse, France"
-  date_start = "2007-06-30"
-  date_end = "2011-06-30"
+  date_start = "2007-12-01"
+  date_end = "2011-12-31"
   description = """
   Role of nuclear receptors in the regulation of hepatic metabolism
 

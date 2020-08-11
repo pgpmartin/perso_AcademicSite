@@ -65,7 +65,7 @@ social:
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0002-4271-658X
-- icon: fa-linkedin
+- icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/pascal-martin-4200b321
 - icon: academia

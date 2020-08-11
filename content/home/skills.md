@@ -15,22 +15,42 @@ subtitle = ""
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
 [[feature]]
-  icon = "r-project"
-  icon_pack = "fab"
-  name = "R"
-  description = "90%"
-  
+  icon = "dna"
+  icon_pack = "fas"
+  name = "Genomics"
+  description = ""
+
+[[feature]]
+  icon = "vial"
+  icon_pack = "fas"
+  name = "Molecular Biology"
+  description = ""
+
+[[feature]]
+  icon = "flask"
+  icon_pack = "fas"
+  name = "Biohemistry"
+  description = ""
+
+[[feature]]
+  icon = "laptop-code"
+  icon_pack = "fas"
+  name = "Bioinformatics"
+  description = "100%"  
+
 [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
-  name = "Statistics"
+  name = "Biostatistics"
   description = "100%"  
-  
+
 [[feature]]
-  icon = "camera-retro"
-  icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  icon = "r-project"
+  icon_pack = "fab"
+  name = "R"
+  description = ""
+  
+  
 
 # Uncomment to use emoji icons.
 # [[feature]]

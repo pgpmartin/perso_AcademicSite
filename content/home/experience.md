@@ -37,8 +37,8 @@ date_format = "Jan 2006"
   company = "INRAE ToxAlim - BioToMyc"
   company_url = "https://www6.toulouse.inrae.fr/toxalim/Equipes-Recherche-Publications/BioToMyc-Biosynthese-Toxicite-des-Mycotoxines"
   location = "Toulouse, France"
-  date_start = "2019-07-21"
-  date_end = "2017-07-01"
+  date_start = "2017-07-01"
+  date_end = "2019-07-21"
   description = """Role of transcription elongation factors in the regulation of gene clusters responsible for the production of mycotoxins"""
 
 [[experience]]
@@ -58,15 +58,15 @@ date_format = "Jan 2006"
   date_start = "2013-01-01"
   date_end = "2015-06-30"
   description = """
-  * Chromatin organization by insulators and RNA polymerase II transcription in Drosophila cells
+  * Chromatin organization and PolII transcription in Drosophila cells
   * NGS approaches
   * Bioinformatics training
   """
 
 [[experience]]
-  title = "Founder and Head of the GeT-TRiX transcriptomics facility"
+  title = "Founder and Head of the [GeT-TRiX](https://www6.toulouse.inrae.fr/toxalim/Plateformes-Technologiques/E23-TRiX) transcriptomics facility"
   company = "INRAE ToxAlim"
-  company_url = "https://www6.toulouse.inrae.fr/toxalim/Plateformes-Technologiques/E23-TRiX"
+  company_url = "https://www6.toulouse.inrae.fr/toxalim"
   location = "Toulouse, France"
   date_start = "2011-01-01"
   date_end = "2015-06-30"
@@ -80,7 +80,7 @@ date_format = "Jan 2006"
 
 [[experience]]
   title = "Joint-head of the Integrative Toxicology & Metabolism group"
-  company = "INRAE ToxAlim"
+  company = "INRAE ToxAlim - TIM"
   company_url = "https://www6.toulouse.inrae.fr/toxalim/Equipes-Recherche-Publications/TIM-Toxicologie-Integrative-Metabolisme"
   location = "Toulouse, France"
   date_start = "2007-06-30"
@@ -103,7 +103,8 @@ date_format = "Jan 2006"
   description = """
   PPARalpha-mediated transcriptional regulations
 
-  * _in vivo_ studies in transgenic mouse models (pharmacology, toxicology & nutrition)
+  * _in vivo_ studies in transgenic mouse models
+  * Pharmacology, toxicology & nutrition
   * Transcriptomics
   * Data analysis and integration
   * Article writing

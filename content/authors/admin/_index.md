@@ -20,7 +20,7 @@ organizations:
   url: "https://www6.toulouse.inra.fr/toxalim"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Research Engineer in Genomics/Bioinformatics
+bio: Research Engineer in Genomics and Bioinformatics
 
 
 interests:
@@ -59,18 +59,18 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/pgpmartin
-- icon: researchgate
-  icon_pack: ai
-  link: https://www.researchgate.net/profile/Pascal_Martin2
-- icon: orcid
-  icon_pack: ai
-  link: https://orcid.org/0000-0002-4271-658X
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/in/pascal-martin-4200b321
-- icon: academia
-  icon_pack: ai
-  link: https://inra.academia.edu/PascalMartin
+# - icon: researchgate
+#   icon_pack: ai
+#   link: https://www.researchgate.net/profile/Pascal_Martin2
+# - icon: orcid
+#   icon_pack: ai
+#   link: https://orcid.org/0000-0002-4271-658X
+# - icon: linkedin
+#   icon_pack: fab
+#   link: https://www.linkedin.com/in/pascal-martin-4200b321
+# - icon: academia
+#   icon_pack: ai
+#   link: https://inra.academia.edu/PascalMartin
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
@@ -83,9 +83,9 @@ email: ""
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-user_groups:
-- Researchers
-- Visitors
+# user_groups:
+# - Researchers
+# - Visitors
 ---
 
 I obtained my diploma of engineering in agronomy at [Agrocampus Ouest](https://www.agrocampus-ouest.fr/) together with an MSc in Biochemistry and Genetics applied to Animal Science from Univ. Rennes II in 2000. Then, I worked on transcriptional regulations by the nuclear receptors PPARalpha and RXR at INRA Pharmacology and Toxicology research unit (supervisor T. Pineau) and obtained my PhD in biology in 2007 at Toulouse III University.    

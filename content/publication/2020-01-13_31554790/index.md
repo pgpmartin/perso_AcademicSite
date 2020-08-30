@@ -37,7 +37,7 @@ links:
   icon: pubmed
 
 # Links
-url_pdf:[{name = pdf, url=https://www.nature.com/articles/s41467-019-12328-w.pdf}]
+url_pdf: https://www.nature.com/articles/s41467-019-12328-w.pdf
 url_code:
 url_dataset:
 url_poster:

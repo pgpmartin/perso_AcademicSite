@@ -1,7 +1,7 @@
 ---
 #Title, authors, date, doi:
 title: "Hepatic lipase deficiency decreases the selective uptake of HDL-cholesteryl esters in vivo."
-authors: ["G Lambert", "MJ Amar", "P Martin", "J Fruchart-Najib", "B Foger", "RD Shamburek", "HB Brewer", "S Santamarina-Fojo"]
+authors: ["G Lambert", "MJ Amar", *"P Martin"*, "J Fruchart-Najib", "B Foger", "RD Shamburek", "HB Brewer", "S Santamarina-Fojo"]
 date: 2000-07-24
 doi: ""
 
@@ -30,7 +30,7 @@ featured: false
 
 # Custom links
 links:
-- name: Pubmed
+- name:
   url: https://www.ncbi.nlm.nih.gov/pubmed/10787427
   icon_pack: ai
   icon: pubmed

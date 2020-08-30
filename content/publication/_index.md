@@ -10,6 +10,6 @@ view: 4
 
 # Optional header image (relative to `static/media/` folder).
 header:
-  caption: ""
-  image: ""
+  caption: "Publications"
+  image: "headers/writing_paper_pen_header.jpeg"
 ---

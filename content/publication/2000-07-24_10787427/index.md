@@ -6,9 +6,10 @@ date: 2000-07-24
 doi: ""
 
 # Schedule page publish date (NOT publication date).
-publishDate: 2020-08-30T10:39:01-04:00
+publishDate: 2020-08-30T19:43:40-04:00
 
 # Publication type
+# Legend: 0=uncategorized, 1=conf paper, 2=article, 3=preprint, 4=report, 5=book, 6=book chapter, 7=thesis, 8=patent
 publication_types: ["2"]
 
 # Publication name and optional abbreviated name
@@ -30,7 +31,7 @@ featured: false
 
 # Custom links
 links:
-- name:
+- name: Pubmed
   url: https://www.ncbi.nlm.nih.gov/pubmed/10787427
   icon_pack: ai
   icon: pubmed
@@ -45,7 +46,6 @@ url_slides:
 url_source:
 url_video:
 
-
 # Featured image (add jpg/png to page folder)
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
 image: 
@@ -53,10 +53,8 @@ image:
   focal_point: ""
   preview_only: ""
 
-
 # Associated projects (myproject references content/project/myproject/index.md)
 projects: [GeneExpressionRegulation]
-
 
 # Slides (slides: "myslides" references content/slides/myslides/index.md)
 slides: ""

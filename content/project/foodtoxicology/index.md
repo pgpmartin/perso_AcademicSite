@@ -55,7 +55,7 @@ I managed with Thierry Pineau (2008-2009) and then H Guillou (2010-2011) the tea
 {{< figure library="true" src="Eveillard_GraphAbstract.jpg" title="DEHP activates CAR and PPARalpha" >}}  
   
 
-* With Béatrice Roques, we studied the pathways by which fipronil, a very common phenylpyrazole insecticide, alters thyroid hormone homeostasis ([Roques *et al.*, Tox Sci, 2012]({{< relref "publication/2012-08-08_22447239/index.md" >}})). We found that liver metabolic pathways involved in both xenobiotic and thyroid hormone metabolism were activated upon fipronil exposure and that the nuclear receptors CAR and PXR were involved in regulating the expression of the corresponding genes ([Roques *et al.*, Biochem Pharmacol, 2013]({{< relref "publication/2013-12-17_23962444/index.md" >}})).  
+* With Béatrice Roques, we studied the pathways by which fipronil, a very common phenylpyrazole insecticide, alters thyroid hormone homeostasis ([Roques *et al.*, Tox Sci, 2012]({{< relref "publication/2012-08-08_22447239/index.md" >}})). We found that liver metabolic pathways involved in both xenobiotic and thyroid hormone metabolism were activated upon fipronil exposure and that the nuclear receptors CAR and PXR were involved in regulating the expression of the corresponding genes ([Roques *et al.*, Biochem Pharmacol, 2013]({{< relref "publication/2013-12-17_23962444/index.md" >}})). We also generated preliminary evidences that this is associated with compensatory gene regulations in the thyroid gland itself ([Martin *et al.*, Tox Appl Pharmacol, 2020]({{< relref "publication/2020-08-07_31881178/index.md" >}})  
 
 {{< figure library="true" src="Roques_GraphAbstract.jpg" title="Fipronil and TH metabolism" >}}  
   
@@ -65,7 +65,7 @@ I managed with Thierry Pineau (2008-2009) and then H Guillou (2010-2011) the tea
 {{< figure library="true" src="Marmugi_GraphAbstract.png" title="Effect of low BPA doses on the liver" >}}  
   
 
-* With Nabila Moussaoui and [Eric Houdeau](https://www6.toulouse.inra.fr/toxalim/Equipes-Recherche-Publications/E11-ENTeRisk-Endocrinologie-Toxicologie-de-la-Barriere-Intestinale), we studied how maternal separation and stress hormones alter intestinal permeability specifically in young rat pups {{< cite page="/publication/2015-01-02_24586321" view="4" >}}.  
+* With Nabila Moussaoui and [Eric Houdeau](https://www6.toulouse.inra.fr/toxalim/Equipes-Recherche-Publications/E11-ENTeRisk-Endocrinologie-Toxicologie-de-la-Barriere-Intestinale), we studied how maternal separation and stress hormones alter intestinal permeability specifically in young rat pups ([Moussaoui *et al.*, PLoS One, 2014]({{< relref "publication/2015-01-02_24586321/index.md" >}})).  
   
   
 These studies, as well as those listed below, provided important insights into the mechanisms and effects of several food contaminants, sometimes contributing directly to the assessement of the toxicity of these substances by regulatory agencies.  

@@ -27,7 +27,7 @@ tags: []
 categories: []
 
 # Featured/Selected article?
-featured: false
+featured: true
 
 # Custom links
 links:

@@ -48,9 +48,9 @@ slides: ""
   * [Philippe Besse](https://www.math.univ-toulouse.fr/~besse/index.html)  
   * [Alain Baccini](https://www.math.univ-toulouse.fr/~baccini/).  
 
-  &nbsp;&nbsp;&nbsp;&nbsp;We first made an inventory of methods relevant to analyze transcriptomic data ([Baccini *et al.*, 2005]({{< relref "publication/2005_JStatFR.md" >}})).  
+  &nbsp;&nbsp;&nbsp;&nbsp;We first made an inventory of methods relevant to analyze transcriptomic data ([Baccini *et al.*, 2005]({{< relref "publication/2005_JStatFR/index.md" >}})).  
   In order to integrate transcriptomic and lipidomic data acquired during my PhD, Igniacio Gonzalez developed the regularized version of Canonical Correlation Analysis ([Gonzalez *et al.*, 2008]({{< relref "publication/2008-01-17_CCApackage.md" >}})).  
-  This initial work was then taken in multiple directions by [Kim-Anh Lê Cao](http://lecao-lab.science.unimelb.edu.au/) who developed the first version of the [mixomics](http://mixomics.org/) package during her PhD (see for example [Lê Cao *et al.*, 2009]({{< relref "publication/2009-03-17_19171069.md" >}})) and still actively leads the development of this package and of data integration methods.  
+  This initial work was then taken in multiple directions by [Kim-Anh Lê Cao](http://lecao-lab.science.unimelb.edu.au/) who developed the first version of the [mixomics](http://mixomics.org/) package during her PhD (see for example [Lê Cao *et al.*, 2009]({{< relref "publication/2009-03-17_19171069/index.md" >}})) and still actively leads the development of this package and of data integration methods.  
   
   With Sébastien Déjean, we also developed methods to analyze transcriptomic data acquired during time-series experiments ([Déjean *et al.*, 2010]({{< relref "publication/2010-06-28_17713590.md" >}})).
   

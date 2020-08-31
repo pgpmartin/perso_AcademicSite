@@ -54,7 +54,7 @@ image:
   preview_only: ""
 
 # Associated projects (myproject references content/project/myproject/index.md)
-projects: [GeneExpressionRegulation]
+projects: [nuclearreceptors, foodtoxicology]
 
 # Slides (slides: "myslides" references content/slides/myslides/index.md)
 slides: ""

@@ -16,7 +16,7 @@ external_link: ""
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
   caption: "Bioinformatics & Biostatistics"
-  focal_point: "BottomRight"
+  focal_point: "Center"
   preview_only: false
 
 # Custom links (optional).
@@ -38,6 +38,12 @@ url_video: ""
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
 slides: ""
+
+#Optional header
+header:
+  image: "headers/BioinfoBiostat_bandeau.png"
+  caption: "Bioinfo & Biostats"
+
 ---
 
  While developing transcriptomic approaches during my PhD, I quickly felt the need to learn more tools from biostatistics in order to perform thorough analyses of my data.  
@@ -54,10 +60,10 @@ slides: ""
   
   With Sébastien Déjean, we also developed methods to analyze transcriptomic data acquired during time-series experiments ([Déjean *et al.*, 2010]({{< relref "publication/2010-06-28_17713590/index.md" >}})).
   
-  This experience in biostatistics was extensively used in my research projects. Notably I developed a pipeline for the analysis of microarray data that is still the foundation of the statistical analyses performed by the [GeT-TRiX](https://www6.toulouse.inra.fr/toxalim/Plateformes-Technologiques/E23-TRiX) transcriptomic facility. 
+  This experience in biostatistics was extensively used in my research projects. Notably I developed a pipeline for the analysis of microarray data that is still the foundation of the statistical analyses performed by the [GeT-TRiX](https://www6.toulouse.inra.fr/toxalim/Plateformes-Technologiques/E23-TRiX) transcriptomic facility.  
   
   Since 2015, I have gained more experience in bioinformatics for the analysis of next-generation sequencing (NGS) data, in particular using [R](http://www.r-project.org) and [Bioconductor](http://bioconductor.org/).  
-  I have developed my first R package named [GeneNeighborhood](https://github.com/pgpmartin/GeneNeighborhood). It allows to explore the orientation and proximity of the direct upstream and downstream neighbors of a predefined set of genes.
+  I have developed my first R package named [GeneNeighborhood](https://github.com/pgpmartin/GeneNeighborhood). It allows to explore the orientation and proximity of the direct upstream and downstream neighbors of a predefined set of genes.  
   I have also developed the [NanoBAC](https://github.com/pgpmartin/NanoBAC) R package and a [snakemake](https://snakemake.readthedocs.io/en/stable/) pipeline to assemble the reads obtained from BAC sequencing on the Oxford Nanopore long read sequencers. 
   
   

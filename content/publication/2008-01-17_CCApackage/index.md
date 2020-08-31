@@ -23,7 +23,7 @@ abstract: "Canonical correlations analysis (CCA) is an exploratory statistical m
 summary: ""
 
 # Tags and categories:
-tags: [bioinfo, biostat]
+tags: [bioinformatics, biostatistics]
 categories: []
 
 # Featured/Selected article?

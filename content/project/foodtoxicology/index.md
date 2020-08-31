@@ -70,6 +70,3 @@ I managed with Thierry Pineau (2008-2009) and then H Guillou (2010-2011) the tea
   
 These studies, as well as those listed below, provided important insights into the mechanisms and effects of several food contaminants, sometimes contributing directly to the assessement of the toxicity of these substances by regulatory agencies.  
   
-  
-
-

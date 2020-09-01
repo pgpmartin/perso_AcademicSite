@@ -1,0 +1,221 @@
+---
+title: Generate random genes as GRanges
+author: Pascal
+date: '2018-12-09'
+slug: generate-random-genes-as-granges
+categories:
+  - R
+tags:
+  - R
+  - bioconductor
+  - annotations
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<div id="generating-random-genome-annotations" class="section level2">
+<h2>Generating random genome annotations</h2>
+<p>For different purposes, I often need to create random gene/features annotations.
+I usually need these annotations as a <code>GRanges</code> object (see the <a href="http://bioconductor.org/packages/release/bioc/html/GenomicRanges.html">GenomicRanges package</a>).<br />
+I searched a bit on the internet but couldn’t really find what I was looking for.</p>
+<p>I want to be able to control the following parameters:</p>
+<ul>
+<li>Number of genes<br />
+</li>
+<li>Gene sizes (~gaussian distribution with upper and lower bounds as parameters)<br />
+</li>
+<li>Number of chromosomes<br />
+</li>
+<li>Chromosomes’ length</li>
+</ul>
+<p>I will assign to each chromosome a number of gene that is proportional to the chromosome length (so all chromosome have ~equal gene densities).</p>
+<p>First I need 2 functions:<br />
+1. A function that generates random (and unique) gene names<br />
+2. A function that generates gene lengths (or ‘sizes’) within defined boundaries</p>
+<div id="function-to-generate-random-gene-names" class="section level3">
+<h3>Function to generate random gene names</h3>
+<p>I basically copy/pasted a solution found on this <a href="https://stackoverflow.com/questions/29652356/generate-unique-alphanumeric-ids">stackoverflow post</a>. I just modified it slightly to ony allow letters (and not numbers) in gene names in order to simplify the definition of the length (number of characters) of gene names, which will be automatically defined based on the gene number.</p>
+<pre class="r"><code>idGenerator &lt;- function(n, lengthId) { 
+    idList &lt;- stringi::stri_rand_strings(n, 
+                                         lengthId, 
+                                         pattern = &quot;[A-Za-z]&quot;) 
+    while(any(duplicated(idList))) { 
+         idList[which(duplicated(idList))] &lt;- 
+           stringi::stri_rand_strings(sum(duplicated(idList), na.rm = TRUE), 
+                                      lengthId, 
+                                      pattern = &quot;[A-Za-z]&quot;) 
+         } 
+    return(idList) 
+    }</code></pre>
+</div>
+<div id="function-to-generate-random-gene-widthsizes" class="section level3">
+<h3>Function to generate random gene width/sizes</h3>
+<p>Gene size distribution heavily depends on the species. For example here is the distribution of gene annotations for 6 species:</p>
+<pre class="r"><code>#Load libraries
+library(tidyverse)
+library(TxDb.Hsapiens.UCSC.hg38.knownGene)
+library(TxDb.Athaliana.BioMart.plantsmart25)
+library(TxDb.Dmelanogaster.UCSC.dm6.ensGene)
+library(TxDb.Mmusculus.UCSC.mm10.ensGene)
+library(TxDb.Scerevisiae.UCSC.sacCer3.sgdGene)
+library(TxDb.Celegans.UCSC.ce6.ensGene)
+
+txdb &lt;- list()
+txdb[[&quot;hg38&quot;]] &lt;- TxDb.Hsapiens.UCSC.hg38.knownGene
+txdb[[&quot;mm10&quot;]] &lt;- TxDb.Mmusculus.UCSC.mm10.ensGene
+txdb[[&quot;dm6&quot;]] &lt;- TxDb.Dmelanogaster.UCSC.dm6.ensGene
+txdb[[&quot;ce6&quot;]] &lt;- TxDb.Celegans.UCSC.ce6.ensGene
+txdb[[&quot;tair10&quot;]] &lt;- TxDb.Athaliana.BioMart.plantsmart25
+txdb[[&quot;sacSer3&quot;]] &lt;- TxDb.Scerevisiae.UCSC.sacCer3.sgdGene
+
+#Get gene size and arange as a data.frame
+gnw &lt;- reshape2::melt(lapply(txdb, 
+                             function(x) width(genes(x))),
+                      value.name = &quot;GeneSize&quot;) %&gt;%
+       dplyr::mutate(Species = factor(L1,
+                                      levels = names(txdb),
+                                      ordered = TRUE))
+
+# Personalize colors and labels
+mycols = viridis::viridis(8)[-c(1,8)]
+names(mycols) &lt;- names(txdb)
+mylabs &lt;- c(&quot;Homo sapiens (hg38)&quot;, &quot;Mus musculus (mm10)&quot;,
+            &quot;Drosophila melaogaster (dm6)&quot;, &quot;Caenorhabditis elegans (cer6)&quot;,
+            &quot;Arabidopsis thaliana (TAIR10)&quot;, &quot;Saccharomyces cerevisiae (sacCer3)&quot;)
+names(mylabs) &lt;- names(txdb)
+
+# Plot distributions:
+ggplot(gnw, aes(x=log10(GeneSize), fill=Species)) +
+    geom_histogram(aes(y=..density..),
+                   colour=&quot;black&quot;, fill=&quot;lightgrey&quot;) +
+    geom_density(alpha=.3) +
+    scale_fill_manual(values = mycols,
+                      labels = mylabs) +
+    scale_x_continuous(breaks = c(2, 4, 6),
+                       labels = c(&quot;100bp&quot;, &quot;10Kb&quot;, &quot;1Mbp&quot;)) +
+    labs(x = &quot;Gene Size (log scale)&quot;,
+         y = &quot;Density&quot;) +
+    theme_bw() +
+    theme(panel.grid.minor = element_blank()) +
+    facet_wrap(vars(Species), nrow=3)</code></pre>
+<div class="figure">
+<img src="/~pmartin/pgpmartin/img/GeneSizeDistribution_6species.png" alt="Gene Size Distribution in 6 species" />
+<p class="caption">Gene Size Distribution in 6 species</p>
+</div>
+<p>Although it probably does not reflect a “natural” situation, I decided to define gene sizes based on a Gaussian distribution with a choice of a minimum and a maximum gene size.</p>
+<pre class="r"><code>widthGenerator &lt;- function(n, minWidth, maxWidth) {
+    if (maxWidth&lt;=minWidth) stop(&quot;maxWidth should be &lt; minWidth&quot;)
+    meanWidth &lt;- minWidth + sqrt(maxWidth*minWidth) # take geometrical mean to limit the impact of high maxWidth
+    sdWidth &lt;- floor((maxWidth-meanWidth)/3)
+    wdList &lt;- round(rnorm(n, meanWidth, sdWidth))
+    isOutOfRange &lt;- (wdList&lt;minWidth | wdList&gt;maxWidth)
+    while(any(isOutOfRange)) {
+        wdList[isOutOfRange] &lt;- round(rnorm(sum(isOutOfRange), 
+                                            meanWidth, 
+                                            sdWidth))
+        isOutOfRange &lt;- (wdList&lt;minWidth | wdList&gt;maxWidth)
+    }
+    return(wdList)
+}</code></pre>
+<p>Here is what we generate with some relatively usual parameters (gene size betwen 100bp and 100Kb):</p>
+<pre class="r"><code>df &lt;- data.frame(GeneSize = widthGenerator(1e4, 100, 1e5))
+
+ggplot(df, aes(x=log10(GeneSize))) +
+    geom_histogram(aes(y=..density..),
+                   colour=&quot;black&quot;, fill=&quot;lightgrey&quot;) +
+    geom_density(alpha=.3, fill = &quot;darkcyan&quot;) +
+    scale_x_continuous(limits = c(1.2, 6.8),
+                       breaks = c(2, 3, 4, 5, 6),
+                       labels = c(&quot;100bp&quot;, &quot;1kb&quot;, &quot;10kb&quot;, &quot;100kb&quot;, &quot;1Mb&quot;)) +
+    labs(x = &quot;Gene Size (log scale)&quot;,
+         y = &quot;Density&quot;) +
+    theme_bw() +
+    theme(panel.grid.minor = element_blank())</code></pre>
+<p><img src="/post/2018-12-09-generate-random-genes-as-granges_files/figure-html/test%20widthGenerator-1.png" width="672" /></p>
+</div>
+<div id="function-to-generate-random-genes" class="section level3">
+<h3>Function to generate random genes</h3>
+<p>Now the function that generates random genes as GRanges, using the 2 previous functions above:</p>
+<pre class="r"><code>CreateGR &lt;- function(ng=1e4, nchr=1, chromlength=1e4, widthMin=100, widthMax=1e4) {
+## ng: number of genes
+## nchr: number of chromosomes
+## withMin/WidthMax: min/max gene size
+## chromLength: vector of chromosome lengths
+
+# Check
+if (length(chromlength) != nchr) {
+    stop(&quot;length(chromlength) is not equal to number of chromosomes (nchr)&quot;)
+}
+
+#Number of genes on each chromosome
+##Proportion of the genome for each chromosome
+ChromProp &lt;- chromlength/sum(chromlength)
+##Number of genes per chromosome
+GeneNumberByChr &lt;- round(ChromProp*ng,0)
+if (sum(GeneNumberByChr) != ng) {
+    GeneNumberByChr[1] &lt;- GeneNumberByChr[1] + ng - sum(GeneNumberByChr)
+}
+
+#Chromosomes
+chrNames &lt;- paste0(&quot;chr&quot;, 1:nchr)
+gnChr &lt;- S4Vectors::Rle(rep(chrNames, 
+                            times=GeneNumberByChr))
+
+#Strands
+gnStrand &lt;- S4Vectors::Rle(sample(c(&quot;+&quot;, &quot;-&quot;), 
+                                 size = ng, 
+                                 replace = TRUE))
+
+#Ranges
+##Gene names
+gnLength &lt;- ceiling(log(ng) / log(26)) + 1
+gnNames &lt;- idGenerator(ng, gnLength)
+
+## start values (even with MaxWidth the genes won&#39;t go beyond chromosome borders)
+gnStart &lt;- unlist(mapply(sample, 
+                         lapply(chromlength, 
+                                function(x){(widthMax+1):(x-widthMax-1)}), 
+                         GeneNumberByChr, 
+                         list(&quot;replace&quot; = TRUE)),
+                  use.names = FALSE) 
+
+#Gene widths
+gnWidth &lt;- widthGenerator(ng, 
+                          maxWidth=widthMax, 
+                          minWidth=widthMin)
+
+GR &lt;- GenomicRanges::GRanges(seqnames = gnChr,
+                             ranges = IRanges::IRanges(start = gnStart,
+                                                       width = gnWidth,
+                                                       names = gnNames),
+                             strand = gnStrand)
+GenomeInfoDb::seqinfo(GR) &lt;- GenomeInfoDb::Seqinfo(seqnames = chrNames,
+                                                   seqlengths = chromlength,
+                                                   isCircular = rep(FALSE, length(chrNames)),
+                                                   genome = &quot;mock&quot;)         
+return(GR)
+}</code></pre>
+<p>Using the following parameters, the function generates a <code>GRanges</code> in ~30 nanoseconds:</p>
+<pre class="r"><code>chromSizes &lt;- c(30427671, 19698289, 23459830, 18585056, 26975502) # from A. thaliana genome 
+CreateGR(1e5, nchr=5, chromlength=chromSizes)</code></pre>
+<pre><code>## GRanges object with 100000 ranges and 0 metadata columns:
+##         seqnames            ranges strand
+##            &lt;Rle&gt;         &lt;IRanges&gt;  &lt;Rle&gt;
+##   PHNnF     chr1   9813117-9813464      +
+##   BZNOk     chr1 14704718-14707600      -
+##   GXuQp     chr1   7972308-7974493      -
+##   pBWwu     chr1     375904-377888      +
+##   BGlEH     chr1 19908599-19908924      +
+##     ...      ...               ...    ...
+##   DbUVG     chr5   9393934-9396478      +
+##   eKCPh     chr5 16819893-16821310      +
+##   simLV     chr5 16533275-16535367      +
+##   ehgmd     chr5 23765327-23767652      +
+##   pihcx     chr5 16591323-16594128      -
+##   -------
+##   seqinfo: 5 sequences from mock genome</code></pre>
+</div>
+</div>

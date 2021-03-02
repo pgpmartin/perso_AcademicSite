@@ -25,7 +25,7 @@ date_format = "Jan 2006"
   date_start = "2020-12-01"
   date_end = ""
   description = """
-  Group [Flowering, Fruit Development & Environment](https://www6.bordeaux-aquitaine.inrae.fr/bfp/Recherche/Equipe-Floraison-Developpement-du-Fruit-et-Contraintes-Environnementales)
+  Group [Flowering, Fruit Development & Environment](https://www6.bordeaux-aquitaine.inrae.fr/bfp/Recherche/Equipe-Floraison-Developpement-du-Fruit-et-Contraintes-Environnementales)  
   Topics:
   
   * Endoreduplication, cell growth and fruit development  

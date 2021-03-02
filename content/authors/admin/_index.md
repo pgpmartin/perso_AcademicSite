@@ -98,6 +98,6 @@ In 2017-2019, back at INRA Toxalim, I joined the [BioToMyc](https://www6.toulous
 
 In 2019-2020, I joined the [lab of Pr Craig Pikaard](https://pikweb.sitehost.iu.edu/) at Indiana University where I worked on long read sequencing to assemble the ribosomal DNA regions of the genome of _Arabidopsis thaliana_. 
 
-In dec 2020, I moved back to France and joined the [Fruit Biology and Pathology](https://www6.bordeaux-aquitaine.inrae.fr/bfp_eng) department at [INRAE](https://www.inrae.fr/en). My first aim is to set up tools to analyze how changes in the epigenome of endoreduplicated cells contribute to the growth of tomat fruit.
+In dec 2020, I moved back to France and joined the [Fruit Biology and Pathology](https://www6.bordeaux-aquitaine.inrae.fr/bfp_eng) department at [INRAE](https://www.inrae.fr/en). My first aim is to set up tools to analyze how changes in the epigenome of endoreduplicated cells contribute to the growth of tomato fruit.
 
 Throughout my career, I have balanced biology with bioinformatics and biostatistics and gained experience in the production and analysis of different types of high throughput data.

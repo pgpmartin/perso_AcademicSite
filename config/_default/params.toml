@@ -89,18 +89,18 @@ show_related = {docs = true, page = false, post = true, project = true, publicat
 
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "pgp.martin@gmail.com"
-phone = "+1 812 327 9392"
+phone = "+33 769-250-268"
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "Department of Biology, Indiana University, Myers Hall Room 300, 915 E. Third Street", city = "Bloomington", region = "IN", postcode = "47405", country = "United States", country_code = "US"}
+address = {street = "UMR1332 BFP Biologie du Fruit et Pathologie, 71 av Edouard-Bourlaux, CS 20032", city = "Villenave d'Ornon", region = "", postcode = "33882", country = "France", country_code = "FR"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "39.164726", longitude = "-86.522259"}
+coordinates = {latitude = "44.787412", longitude = "-0.578315"}
 
 # Directions for visitors to locate you.
-directions = "Third Floor, Room 300"
+directions = "Bureau 3003"
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
@@ -142,7 +142,7 @@ date_format = "Mon, 02 Jan 2006"
 time_format = "15:04"
 
 # Address format (choose from the [address_formats] list below or add you own to the list).
-address_format = "en-us"
+address_format = "fr-fr"
 
 ############################
 ## Advanced

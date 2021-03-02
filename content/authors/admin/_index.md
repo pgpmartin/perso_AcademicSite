@@ -10,17 +10,15 @@ authors:
 superuser: true
 
 # Role/position
-role: Research Specialist at HHMI / Indiana University
+role: Senior Research Specialist (IR1) at INRAE
 
 # Organizations/Affiliations
 organizations:
-- name: Pikaard Lab
-  url: "http://www.indiana.edu/~pikweb/"
-- name: INRAE ToxAlim
-  url: "https://www6.toulouse.inra.fr/toxalim"
+- name: INRAE BFP
+  url: "https://www6.bordeaux-aquitaine.inrae.fr/bfp"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Research Engineer in Genomics and Bioinformatics
+bio: Research Specialist in Genomics and Bioinformatics
 
 
 interests:
@@ -96,7 +94,7 @@ In 2013-2015, I joined the group of Olivier Cuvier at the [Center for Integrativ
 
 In 2015-2017 I was awarded an [Agreenskills+](https://www.agreenskills.eu) fellowship, and joined the group of Scott Michaels at Indiana University [Department of Biology](https://biology.indiana.edu/) to decipher the role of a new family of negative transcription elongation factors on RNA polymerase II processivity, chromatin organization and gene expression.  
 
-In 2017-2019, back at INRA Toxalim, I joined the [BioToMyc](https://www6.toulouse.inrae.fr/toxalim/Equipes-Recherche-Publications/BioToMyc-Biosynthese-Toxicite-des-Mycotoxines) group of Isabelle Oswald where I initiated a project aimed at elucidating the role played by transcription elongation factors on the regulation of gene clusters involve in the synthesis of mycotoxins.
+In 2017-2019, back at INRA Toxalim, I joined the [BioToMyc](https://www6.toulouse.inrae.fr/toxalim/Equipes-Recherche-Publications/BioToMyc-Biosynthese-Toxicite-des-Mycotoxines) group of Isabelle Oswald where I initiated a project aimed at elucidating the role played by transcription elongation factors on the regulation of gene clusters involved in the synthesis of mycotoxins.
 
 In 2019-2020, I joined the [lab of Pr Craig Pikaard](https://pikweb.sitehost.iu.edu/) at Indiana University where I worked on long read sequencing to assemble the ribosomal DNA regions of the genome of _Arabidopsis thaliana_. 
 

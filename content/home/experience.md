@@ -18,12 +18,28 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
+  title = "Senior Research Engineer (IR1)"
+  company = "INRAE Fruit Biology & Pathology"
+  company_url = "https://www6.bordeaux-aquitaine.inrae.fr/bfp"
+  location = "Bordeaux, FRANCE"
+  date_start = "2020-12-01"
+  date_end = ""
+  description = """
+  Group [Flowering, Fruit Development & Environment](https://www6.bordeaux-aquitaine.inrae.fr/bfp/Recherche/Equipe-Floraison-Developpement-du-Fruit-et-Contraintes-Environnementales)
+  Topics:
+  
+  * Endoreduplication, cell growth and fruit development  
+  * Chromatin and gene expression  
+  * Genomics, epigenomics & bioinformatics  
+  """
+
+[[experience]]
   title = "Research Specialist"
   company = "Pikaard lab - HHMI / Indiana University"
   company_url = "https://pikweb.sitehost.iu.edu/"
   location = "Indiana, USA"
   date_start = "2019-07-14"
-  date_end = ""
+  date_end = "2020-11-27"
   description = """
   Projects:
   

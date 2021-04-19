@@ -1,6 +1,6 @@
 ---
 #Title, authors, date, doi:
-title: "Transcriptomic modifications of the thyroid gland upon exposure to phytosanitary-grade fipronil: Evidence for the activation of compensatory pathways."
+title: "Transcriptomic modifications of the thyroid gland upon exposure to phytosanitary-grade fipronil: Evidence for the activation of compensatory pathways"
 authors: ["PGP Martin", "V Dupouy", "J Leghait", "T Pineau", "A Polizzi", "F Lasserre", "BB Roques", "C Viguié"]
 date: 2020-08-07
 doi: ""

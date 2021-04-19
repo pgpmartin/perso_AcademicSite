@@ -1,6 +1,6 @@
 ---
 #Title, authors, date, doi:
-title: "BORDER proteins protect expression of neighboring genes by promoting 3' Pol II pausing in plants."
+title: "BORDER proteins protect expression of neighboring genes by promoting 3' Pol II pausing in plants"
 authors: ["X Yu*", "PGP Martin*", "SD Michaels", "* co-first authors"]
 date: 2020-01-13
 doi: ""

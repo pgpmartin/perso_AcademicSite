@@ -1,6 +1,6 @@
 ---
 #Title, authors, date, doi:
-title: "Dietary oleic acid regulates hepatic lipogenesis through a liver X receptor-dependent signaling."
+title: "Dietary oleic acid regulates hepatic lipogenesis through a liver X receptor-dependent signaling"
 authors: ["S Ducheix", "A Montagner", "A Polizzi", "F Lasserre", "M Regnier", "A Marmugi", "F Benhamed", "J Bertrand-Michel", "L Mselli-Lakhal", "N Loiseau", "PG Martin", "JM Lobaccaro", "L Ferrier", "C Postic", "H Guillou"]
 date: 2017-10-02
 doi: ""

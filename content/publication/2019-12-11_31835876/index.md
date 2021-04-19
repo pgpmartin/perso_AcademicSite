@@ -1,6 +1,6 @@
 ---
 #Title, authors, date, doi:
-title: "Co-occurrence of DON and Emerging Mycotoxins in Worldwide Finished Pig Feed and Their Combined Toxicity in Intestinal Cells."
+title: "Co-occurrence of DON and Emerging Mycotoxins in Worldwide Finished Pig Feed and Their Combined Toxicity in Intestinal Cells"
 authors: ["AK Khoshal", "B Novak", "PGP Martin", "T Jenkins", "M Neves", "G Schatzmayr", "IP Oswald", "P Pinton"]
 date: 2019-12-11
 doi: ""

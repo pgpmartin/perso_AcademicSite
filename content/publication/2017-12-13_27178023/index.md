@@ -1,6 +1,6 @@
 ---
 #Title, authors, date, doi:
-title: "NO synthesis from arginine is favored by alpha-linolenic acid in mice fed a high-fat diet."
+title: "NO synthesis from arginine is favored by alpha-linolenic acid in mice fed a high-fat diet"
 authors: ["D Hermier", "N Guelzim", "PG Martin", "JF Huneau", "V Mathe", "A Quignard-Boulange", "F Lasserre", "F Mariotti"]
 date: 2017-12-13
 doi: ""

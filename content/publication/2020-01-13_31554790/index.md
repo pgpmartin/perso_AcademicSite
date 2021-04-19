@@ -23,7 +23,7 @@ abstract: "Ensuring that one gene's transcription does not inappropriately affec
 summary: ""
 
 # Tags and categories:
-tags: []
+tags: [transcription, elongation, RNA polymerase, NGS, ChIP-seq, RNA-seq, R, Bioconductor, bioinformatics]
 categories: []
 
 # Featured/Selected article?

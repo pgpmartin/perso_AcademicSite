@@ -21,10 +21,10 @@ abstract: "Conversion of promoter-proximally paused RNA polymerase II (RNAPII) i
 
 # Optional shortened summary:
 summary: "
-  - The 7SK snRNA is dispensable for cell proliferation under standard growth conditions
-  - After UV exposure, 7SK/P-TEFb is needed for proper stress response and cell survival
-  - P-TEFb extracted from 7SK/P-TEFb triggers UV-induced general RNAPII pause release
-  - P-TEFb from 7SK/P-TEFb supports activation of important UV-responsive genes
+  - The 7SK snRNA is dispensable for cell proliferation under standard growth conditions  
+  - After UV exposure, 7SK/P-TEFb is needed for proper stress response and cell survival  
+  - P-TEFb extracted from 7SK/P-TEFb triggers UV-induced general RNAPII pause release  
+  - P-TEFb from 7SK/P-TEFb supports activation of important UV-responsive genes  
 "
 
 # Tags and categories:

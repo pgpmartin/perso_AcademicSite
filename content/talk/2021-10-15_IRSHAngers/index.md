@@ -46,7 +46,7 @@ image:
 #   icon: twitter
 
 # Optional filename of your slides within your talk's folder or a URL.
-url_slides: "2021-07-06_PMartin_IRSH.pdf"
+url_slides: "2021-10-15_PMartin_IRSH.pdf"
 url_code: "https://github.com/pgpmartin/ChIPseq_functions"
 url_pdf: "https://rdcu.be/czsHd"
 url_video:

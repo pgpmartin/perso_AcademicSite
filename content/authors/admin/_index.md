@@ -51,21 +51,24 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/PgpMartin
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=u99MmB0AAAAJ&hl=fr
 - icon: github
   icon_pack: fab
   link: https://github.com/pgpmartin
-- icon: researchgate
-  icon_pack: ai
-  link: https://www.researchgate.net/profile/Pascal_Martin2
-- icon: orcid
-  icon_pack: ai
-  link: https://orcid.org/0000-0002-4271-658X
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/pascal-martin-4200b321
+- icon: pubmed
+  icon_pack: ai
+  link: https://www.ncbi.nlm.nih.gov/myncbi/18gTyblytRXAT/bibliography/public/
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.co.uk/citations?user=u99MmB0AAAAJ&hl=fr
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0000-0002-4271-658X
+- icon: researchgate
+  icon_pack: ai
+  link: https://www.researchgate.net/profile/Pascal_Martin2
 - icon: academia
   icon_pack: ai
   link: https://inra.academia.edu/PascalMartin

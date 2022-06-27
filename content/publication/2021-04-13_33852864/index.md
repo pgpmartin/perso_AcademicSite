@@ -32,7 +32,7 @@ tags: [transcription, RNA polymerase, DNA damage, UV, NET-seq, ChIRP-seq, ChIP-s
 categories: []
 
 # Featured/Selected article?
-featured: true
+featured: false
 
 # Custom links
 links:

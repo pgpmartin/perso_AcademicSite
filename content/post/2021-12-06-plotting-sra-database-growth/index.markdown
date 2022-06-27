@@ -75,8 +75,7 @@ ggplot(mapping = aes(x = date, y = terabases, color = type)) +
   theme_bw() +
   NULL
 ```
-
-<img src="{{< blogdown/postref >}}index_files/figure-html/sra_plot_linear_scale-1.png" width="672" />
+{{< figure library="true" src="SRA_growth_linear.png" title="Growth of Sequence Read Archive database" >}}  
 
 
 ## Plot with log scale
@@ -98,6 +97,5 @@ ggplot(mapping = aes(x = date, y = bases, color = type)) +
   theme_bw() +
   NULL
 ```
-
-<img src="{{< blogdown/postref >}}index_files/figure-html/sra_plot_log_scale-1.png" width="672" />
+{{< figure library="true" src="SRA_growth_log.png" title="Growth (log) of Sequence Read Archive database" >}}  
 

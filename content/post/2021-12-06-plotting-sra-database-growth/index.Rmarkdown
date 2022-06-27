@@ -54,7 +54,7 @@ sra$date <- as.Date(sra$date, format = "%m/%d/%Y")
 ```
 
 ## Plot with linear scale
-```{r sra_plot_linear_scale}
+```{r sra_plot_linear_scale, eval=FALSE}
 sra %>%
   dplyr::select(date, bases, open_access_bases) %>%
   tidyr::pivot_longer(cols = 2:3, names_to = "type", values_to = "terabases") %>%
@@ -72,10 +72,11 @@ ggplot(mapping = aes(x = date, y = terabases, color = type)) +
   theme_bw() +
   NULL
 ```
+{{< figure library="true" src="SRA_growth_linear.png" title="Growth of Sequence Read Archive database" >}}  
 
 
 ## Plot with log scale
-```{r sra_plot_log_scale}
+```{r sra_plot_log_scale, eval=FALSE}
 sra %>%
   dplyr::select(date, bases, open_access_bases) %>%
   tidyr::pivot_longer(cols = 2:3, names_to = "type", values_to = "bases") %>%
@@ -93,4 +94,5 @@ ggplot(mapping = aes(x = date, y = bases, color = type)) +
   NULL
 
 ```
+{{< figure library="true" src="SRA_growth_log.png" title="Growth (log) of Sequence Read Archive database" >}}  
 

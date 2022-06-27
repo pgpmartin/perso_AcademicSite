@@ -55,4 +55,5 @@ Some **Teaching material**:
 - An introduction to [Functional Genomics](https://github.com/pgpmartin/perso_AcademicSite/blob/master/static/files/PMartin_FunctionalGenomics_med.pdf)  
 - Using R/Bioconductor for [NGS data analysis](https://github.com/pgpmartin/BioC_For_NGS)  
 - RNA-seq and ChIP-seq data analysis: [github](https://github.com/pgpmartin/RNAseq_ChIPseq_course)  
+- Practical RNA-seq data analysis using a remote cluster: [github](https://github.com/pgpmartin/Master_B2AS_UE_NGS)  
 

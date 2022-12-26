@@ -49,13 +49,13 @@ header:
   Endoreduplication is a process by which cells replicate their DNA but do not divide. Successive rounds of this modified cell cycle, called the endocycle, generate polyploid cells with increasing numbers of copies of their genome.  
 
 {{< figure library="true" src="endoreduplication_cycles.png" title="Cell cycle and endocycle" >}}  
-*[CC BY 4.0]  (https://creativecommons.org/licenses/by/4.0)*
+*[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)*
 
   Endoreduplication is a phenomenon that occurs in a wide range of animal species including mammals, insects and other metazoans and in different tissues. It also occurs in fungi but it is most widespread in plants, occurring in up to 90% of Angiosperms.  
   Early during tomato fruit development, cell divisions are replaced by endoreduplication, giving rise to progressively larger cells with ploidy levels up to 512C, that contribute to the growth and structure of the tissue.      
 
 {{< figure library="true" src="0321_DNA_Macrostructure.jpg" title="From DNA to chromatin" >}}  
-  *"[0321_DNA_Macrostructure.jpg](https://upload.wikimedia.org/wikipedia/commons/b/b4/0321_DNA_Macrostructure.jpg)" By OpenStax [CC BY 4.0]  (https://creativecommons.org/licenses/by/4.0), via Wikimedia Commons*
+  *"[0321_DNA_Macrostructure.jpg](https://upload.wikimedia.org/wikipedia/commons/b/b4/0321_DNA_Macrostructure.jpg)" By OpenStax [CC BY 4.0](https://creativecommons.org/licenses/by/4.0), via Wikimedia Commons*
 
   Endoreduplication contributes to cell growth and cell differentiation pathways and is sometimes activated in response to environmental cues in plants. Much work has been devoted to identify the pathways that control the endocycle. However, little is known about the gene regulations that are associated with endoreduplication and how chromatin structure and epigenetic marks are affected in highly polyploid cells.  
   Since 2021, I joined the [FDFE team](https://www6.bordeaux-aquitaine.inrae.fr/bfp_eng/Research/Team-Flowering-Fruit-Development-and-Environmental-Constraints-FDFE) that studies endoreduplication in tomato fruit. Through various project, we have proposed to investigate the epigenome of endoreduplicated cells and to decipher its links with gene expression changes observed in these cells.  

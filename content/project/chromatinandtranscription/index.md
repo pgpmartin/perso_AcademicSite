@@ -53,7 +53,7 @@ header:
   Transcription occurs in the context of chromatin, which is defined by the association of DNA with histone proteins. DNA (~147bp) is wrapped around the nucleosome, an octamer that consists of two copies of each of the four core histone proteins (H2A, H2B, H3 and H4). Further chromatin compaction involves histone H1 that binds between nucleosomes.  
 
 {{< figure library="true" src="0321_DNA_Macrostructure.jpg" title="From DNA to chromatin" >}}  
-  *"[0321_DNA_Macrostructure.jpg](https://upload.wikimedia.org/wikipedia/commons/b/b4/0321_DNA_Macrostructure.jpg)" By OpenStax [CC BY 4.0]  (https://creativecommons.org/licenses/by/4.0), via Wikimedia Commons*
+  *"[0321_DNA_Macrostructure.jpg](https://upload.wikimedia.org/wikipedia/commons/b/b4/0321_DNA_Macrostructure.jpg)" By OpenStax [CC BY 4.0](https://creativecommons.org/licenses/by/4.0), via Wikimedia Commons*
 
   Transcription factors, architectural proteins (e.g. insulators) and RNAPII interact with a number of proteins that are able to modify histones (e.g. HAT or histone acetyltransferases) and to move nucleosomes (e.g. ATP-dependent chromatin remodeling complexes).  
 
